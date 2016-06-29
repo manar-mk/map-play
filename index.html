@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Info windows</title>
+    <script  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB81vmhUkYfCXDgOuWKzGPTUt6w7OE4mbc&signed_in=true">
+    </script>
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        height: 100%;
+      }
+      .controls{
+        position: fixed;
+        left: 100px;
+        top: 100px;
+        width: 100px;
+        z-index: 11;
+        background-color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="controls">
+      <button onclick="changeContent()">change content</button>
+      <button onclick="openWindow(0)">open window</button>
+      <button onclick="closeWindow()">close window</button>
+      <button onclick="allWindows()">all windows</button>
+      <button onclick="allMarkers()">all markers</button>
+    </div>
+    <div id="map"></div>
+    <script src="run.js"></script>
+    <script>
+      initMap();
+    </script>
+    
+
+    
+  </body>
+</html>
